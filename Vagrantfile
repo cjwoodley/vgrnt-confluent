@@ -6,7 +6,7 @@ VAGRANTFILE_API_VERSION = "2"
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.define "confluent" do |confluent|
     #confluent.vm.box = "chef/centos-6.5"
-	confluent.vm.box = "bento/centos-7.2"
+	#confluent.vm.box = "bento/centos-7.2"
 	confluent.vm.box = "bento/ubuntu-15.10"
     confluent.vm.provision "shell", path: "vagrant/ubuntu.sh"
   end
