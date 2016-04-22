@@ -25,7 +25,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provider "virtualbox" do |vb|
     # change to 4096 if you're running hive
     vb.customize ["modifyvm", :id, "--memory", "4096"]
-	vb.customize ["modifyvm", :id, "--cpus", "2"]
+	  vb.customize ["modifyvm", :id, "--cpus", "2"]
   end
 
     # use vagrant-cachier if available (common package cache)
