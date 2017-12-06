@@ -17,10 +17,13 @@ sudo apt-get install openjdk-8-jdk -y
 #sudo apt-get update && sudo apt-get install confluent-platform-2.11.7 -y
 
 
-wget -qO - http://packages.confluent.io/deb/3.3/archive.key | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] http://packages.confluent.io/deb/3.3 stable main"
-sudo apt-get update && sudo apt-get install confluent-platform-2.11 -y
-sudo apt-get update && sudo apt-get install confluent-platform-oss-2.11 -y
+#wget -qO - http://packages.confluent.io/deb/3.3/archive.key | sudo apt-key add -
+#sudo add-apt-repository "deb [arch=amd64] http://packages.confluent.io/deb/3.3 stable main"
+#sudo apt-get update && sudo apt-get install confluent-platform-2.11 -y
+#sudo apt-get update && sudo apt-get install confluent-platform-oss-2.11 -y
 
+wget -qO - http://packages.confluent.io/deb/4.0/archive.key | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] http://packages.confluent.io/deb/4.0 stable main"
+sudo apt-get update && sudo apt-get install confluent-platform-oss-2.11
 
 
