@@ -7,6 +7,9 @@
 #sudo rpm --import http://packages.confluent.io/rpm/2.0/archive.key
 
 #sudo yum install confluent-platform-2.11.7
+
+sudo apt-get update && sudo apt-get upgrade -y
+
 sudo apt-get install software-properties-common python-software-properties -y
 sudo apt-get install openjdk-8-jdk -y
 
@@ -24,6 +27,6 @@ sudo apt-get install openjdk-8-jdk -y
 
 wget -qO - http://packages.confluent.io/deb/4.0/archive.key | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] http://packages.confluent.io/deb/4.0 stable main"
-sudo apt-get update && sudo apt-get install confluent-platform-oss-2.11
+sudo apt-get update && sudo apt-get install confluent-platform-oss-2.11 -y
 
 
